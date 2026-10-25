@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StyleWorkout.Veiws.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout
+        VerticalOptions="Center">
+        <Label 
+            Text="Welcome to style workout!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            Text="BTN1"
+            LineBreakMode="WordWrap"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Background="Blue"
+            TextColor="White"
+            FontSize="20"
+            Margin="20,10,0,0"/>
+        <Button
+            Text="BTN2"
+            LineBreakMode="WordWrap"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Background="Blue"
+            TextColor="White"
+            FontSize="20"/>
+        <Grid
+            Margin="15"
+            RowSpacing="10"
+            ColumnSpacing="10"
+            RowDefinitions="*,*,*"
+            ColumnDefinitions="*,*">
+            <Button
+                Text="GTBN1"
+                LineBreakMode="WordWrap"
+                Background="Blue"
+                TextColor="White"
+                FontSize="20"/>
+            <Button
+                Text="GTBN2"
+                Grid.Column="1"
+                LineBreakMode="WordWrap"
+                Background="Pink"
+                TextColor="White"
+                FontSize="20"/>
+            <Button
+                Text="GTBN3"
+                Grid.Row="1"
+                LineBreakMode="WordWrap"
+                Background="Green"
+                TextColor="White"
+                FontSize="20"/>
+            <Button
+                Text="GTBN4"
+                Grid.Row="1"
+                Grid.Column="1"
+                Style="{StaticResource BtnStyle1}"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
